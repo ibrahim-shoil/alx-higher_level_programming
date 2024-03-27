@@ -8,5 +8,3 @@ def uppercase(str):
         else:
             result += char
     print("{}".format(result))
-
-uppercase("hello, world!")

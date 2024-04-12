@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     import sys
     argsLst = sys.argv
-    lenArgs = len(argLst)
+    lenArgs = len(argsLst)
     idx = 1
     if lenArgs >= 2:
         if lenArgs == 2:

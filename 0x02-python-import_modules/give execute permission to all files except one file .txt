@@ -1,0 +1,25 @@
+If you want to give execute permission to all files except README.md,
+you can use the following command:
+
+find . -type f ! -name 'README.md' -exec chmod +x {} \;
+
+let's break down the command:
+
+1. `find`: This is a command-line utility in Unix-like operating systems.
+ It is used to search for files and directories within a specified directory hierarchy.
+
+2. `.`: This specifies the starting directory for the search. In this case, `.` represents the current directory.
+
+3. `-type f`: This is an option used with `find` to specify that only regular files should be considered. It excludes directories,
+symbolic links, and other special file types from the search.
+
+4. `! -name 'README.md'`: This part of the command is a negated condition. It specifies that files with the name `README.md`
+should be excluded from the search. The `!` operator negates the following condition, so it selects files not matching the specified name.
+
+5. `-exec`: This option is used to execute a command for each selected file found by `find`.
+
+6. `chmod +x {}`: This is the command that will be executed for each selected file. It adds execute (`+x`) permission to the file.
+The `{}` is a placeholder that represents the filename found by `find`, and it will be replaced with each filename in turn.
+
+7. `\;`: This marks the end of the `-exec` command. The `\;` signifies the end of the command to be executed for each file found by `find`.
+The backslash (`\`) is used to escape the semicolon (`;`) so that it is interpreted correctly by the shell.

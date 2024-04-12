@@ -11,6 +11,6 @@ if __name__ == "__main__":
             print('{} arguments:'.format(lenArgs - 1))
         for args in range(lenArgs - 1):
             print('{}: {}'.format(idx, argsLst[idx]))
-        idx += 1
+            idx += 1
     else:
         print('0 arguments')

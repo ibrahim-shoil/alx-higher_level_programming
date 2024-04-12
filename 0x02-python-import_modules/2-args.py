@@ -10,7 +10,7 @@ if __name__ == "__main__":
         else:
             print('{} arguments:'.format(lenArgs - 1))
         for args in range(lenArgs - 1):
-            print('{}: {}'.format(idx, argLst[idx]))
+            print('{}: {}'.format(idx, argsLst[idx]))
         idx += 1
     else:
         print('0 arguments')

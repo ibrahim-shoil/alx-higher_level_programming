@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-"""Module 4-inherits_from.py
-Checking if the object is an instance from a class int or from a class object
+"""checks if object is an instance of a class that
+inherited from the specified class or not
 """
 
 
 def inherits_from(obj, a_class):
-    """Checking if the object is an instance of a class inherited from a class
-    Args:
-        obj: - this is the object to look out
-        a_class: - class to evaluate
+    """Returns true if object is an instance of a class that inherited
+    (directly or indirectly) from the specified class; otherwise False
     """
-
-    return isinstance(obj, a_class) and type(obj) != a_class
+    return (issubclass(type(obj), a_class) and type(obj) != a_class)

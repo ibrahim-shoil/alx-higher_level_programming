@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-"""
-Module: 5-base_geometry
-Returns an empty class
-"""
+"""An empty class"""
 
 
 class BaseGeometry:
-    """Empty class"""
-
+    """This is an empty class"""
     pass

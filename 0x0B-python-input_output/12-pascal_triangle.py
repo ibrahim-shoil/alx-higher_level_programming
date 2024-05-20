@@ -1,20 +1,13 @@
 #!/usr/bin/python3
-
-"""
-File: 12-pascal_triangle.py
-Desc: This module shows the implementation of pascal's triangle.
-Author: Gizachew Bayness (Elec Crazy)
-Date Created: Aug 2 2022
-"""
+"""This module defines a Pascal's Triangle function"""
 
 
 def pascal_triangle(n):
+    """Represents Pascal's Triangle of size n
     """
-    This function returns a list of lists of integers representing
-    the Pascal’s triangle of n
-    """
-    if (n <= 0):
+    if n <= 0:
         return []
+
     triangles = [[1]]
     while len(triangles) != n:
         tri = triangles[-1]
